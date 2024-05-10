@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmployeeReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b8fc9bd-2d73-4519-91d4-2a510998ae69">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EmployeeReport" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b8fc9bd-2d73-4519-91d4-2a510998ae69">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="HRMS-TEST"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
 	<queryString language="SQL">
 		<![CDATA[SELECT * FROM employee]]>
 	</queryString>
@@ -35,7 +44,53 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="280" y="47" width="290" height="30" uuid="09e62a70-4465-42c6-a97a-bf370bb7b537"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Employee Summary Report
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="34" y="-1" width="255" height="25" forecolor="#151621" uuid="bc16e19a-bb1e-4a3d-8a42-97b0218c8880">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Creswave Limited]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="55" width="185" height="15" uuid="5aec8d02-ee52-4f7a-8fdc-2c9646bc8149"/>
+				<text><![CDATA[Tel: +254 754 001 605]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="24" width="185" height="15" uuid="d65bfd0d-3e28-44ba-8569-2d8a5e21eaa7"/>
+				<text><![CDATA[P.O BOX 50548 - 00515]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="34" y="39" width="185" height="15" uuid="3fa6cc8b-626a-47fd-88f3-382a9742ba0f"/>
+				<text><![CDATA[BuruBuru, Nairobi, Kenya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="72" width="184" height="15" uuid="f8cef289-2bca-4c0b-a109-e54a21e2e3aa"/>
+				<text><![CDATA[MAIL: info@creswave.co.ke]]></text>
+			</staticText>
+			<image>
+				<reportElement x="690" y="1" width="96" height="92" uuid="938465b1-83bb-4e0e-aa4b-7f59aff12f1f"/>
+				<imageExpression><![CDATA["/home/muriithi/Downloads/logo.png"]]></imageExpression>
+			</image>
+		</band>
 	</title>
 	<pageHeader>
 		<band height="35" splitType="Stretch"/>
